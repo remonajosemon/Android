@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".help_menu_1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to set/change the currency and exchange rate?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="If you'd like to track your finances in multiple currencies, FinTrack is the right app for you! You can set different currencies for each of your wallets, modify the exchange rate and see the transaction amounts in the main currency of your account as well!"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/default_currency1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="In the settings of the app, you can set the main currency of your account. This means that the All Overview/Dashboard will display all your transactions in this selected currency (even though you have different wallet currencies). You can modify the account currency later and the app will automatically recalculate all your transactions to the new currency."/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/default_currency2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightRed"
+    tools:context=".Change_Profile"
+    android:backgroundTint="@color/grey">
+
+    <TextView
+        android:id="@+id/expenseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text= "Profile Management"
+        android:paddingStart="10dp"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/expenseDetails1"/>
+
+    <TextView
+        android:id="@+id/expenseDetails1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/green"
+        android:text="  "
+        android:textAlignment="inherit"
+        android:layout_alignParentTop="true"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/expenseDetails2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="  "
+        android:textAlignment="inherit"
+        android:layout_below="@+id/expenseDetails"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/expenseDetails2"
+        android:background="@drawable/border2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select / Delete a new profile"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/profile_spinner"
+            android:layout_width="255dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/border3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="208dp"
+            android:text="set profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/delete_profile_button"
+            android:layout_width="152dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="208dp"
+            android:text="delete Profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border2"
+        android:layout_below="@+id/cl1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Creat a new profile"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/setprofile_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:hint="Enter a profile name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/set_profile_button"
+            android:layout_width="159dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="180dp"
+            android:text="Add  New Profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/addnewprofile_imageView"
+            android:layout_width="41dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/darkgreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.850"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/check" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

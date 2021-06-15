@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".help_menu_1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Budget planning"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".help_menu_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            tools:context=".help_menu_1">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="If you wish to save money, FinTrack helps you with its budget features. You can set an unlimited amount of budgets for different categories. We will notify you when you spend a percentage of your budget! You can also see how much money you spend every day in order to stick to it your budgeting goals."/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/budget" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="To set a budget, follow these steps: \n1. Open the Dashboard \n2. Click on Settings(Top left corner) \n3. Click on Budget \n4. Choose the category you wish this budget to be set for. \n5. Enter the amount that you want this budget to be for. \n6. Click on the tick button."/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/budget1" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

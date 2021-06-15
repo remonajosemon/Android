@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehaviour">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Month"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+        <RadioGroup
+
+            android:id="@+id/radio_month_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp">
+
+        <RadioButton
+            android:id="@+id/jan_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="January"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:onClick="checkMonthPressed"/>
+
+
+
+        <RadioButton
+            android:id="@+id/feb_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="February"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:onClick="checkMonthPressed"/>
+
+
+
+        <RadioButton
+            android:id="@+id/march_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="March"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:onClick="checkMonthPressed"/>
+
+                <RadioButton
+                    android:id="@+id/april_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="April"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/may_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="May"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/june_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="June"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/july_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="July"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/august_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="August"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/sept_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="September"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/oct_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="October"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/nov_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="November"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+                <RadioButton
+                    android:id="@+id/dec_radiobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="December"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:onClick="checkMonthPressed"/>
+
+
+
+
+
+        </RadioGroup>
+
+
+
+</LinearLayout>

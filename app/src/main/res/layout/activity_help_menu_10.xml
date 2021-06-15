@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".help_menu_1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset password"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="If you forgot the password to log into FinTrack, follow these instructions. \n1. Simply tap on the Forgot password? link which appears on the login screen."/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/forgot_passwd" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="2. Fill in your email address. \n3. Now check your inbox for an email from us. \n4. Open the link that we’ve just sent over to you.  \n5. The link will lead you to an online password reset page where you set your new password. We require you to insert password twice for its confirmation."/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/forgot_password1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

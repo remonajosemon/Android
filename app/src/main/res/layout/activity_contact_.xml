@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lendmoney_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/contact_button"
+            android:layout_width="192dp"
+            android:layout_height="40dp"
+            android:text="Get contact details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:drawablePadding="20dp"
+            android:inputType="textVisiblePassword"
+            android:hint="Search name"
+            android:padding="8dp"
+            android:background="@drawable/textinputborder"
+            app:layout_constraintStart_toEndOf="@id/contact_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.837"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="15dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/contact_listview"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cl1"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_listview"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/contactname_textView"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="Name"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  />
+
+        <EditText
+            android:id="@+id/contactname_editText"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:layout_width="214dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/textinputborder"
+            app:layout_constraintStart_toEndOf="@id/contactname_textView"
+            app:layout_constraintTop_toTopOf="parent"  />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cl2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/contactnumber_textView"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="Number"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/contactnumber_editText"
+            android:ems="10"
+            android:layout_width="214dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:background="@drawable/textinputborder"
+            app:layout_constraintStart_toEndOf="@id/contactnumber_textView"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cl3"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/amountlent_textView"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Amount"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/amountlent_editText"
+            android:layout_width="214dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:drawableStart="@drawable/ic_add_black_24dp"
+            android:drawablePadding="10dp"
+            android:padding="8dp"
+            android:background="@drawable/textinputborder"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@id/amountlent_textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/currencysymbol_imageView"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/amountlent_editText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/flag_eur" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cl4"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/contact_date_textView"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="Date"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/contact_date_editText"
+            android:layout_width="214dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/textinputborder"
+            android:padding="8dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@id/contact_date_textView"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cl5"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <CheckBox
+            android:id="@+id/checkBox_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Paid back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/delete_contact_button"
+            android:layout_width="90dp"
+            android:layout_height="42dp"
+            android:text="delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <Button
+        android:id="@+id/savecontact_button"
+        android:layout_width="288dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="50dp"
+        android:text="save"
+        android:layout_below="@id/cl6"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

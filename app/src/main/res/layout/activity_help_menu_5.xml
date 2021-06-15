@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".help_menu_1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where to find the details of the transactions?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="The details of records and be viewed under the Timeline. You can also put in filters to filter through all the records based on category, date, time and account. \n By clicking on the transaction, you can view the details."/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/timelime" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/filter"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/highlight"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

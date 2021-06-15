@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">EXPENSE</string>
+    <string name="tab_text_2">INCOME</string>
+    <string name="tab_text_3">LEND</string>
+    <string name="tab_text_4">BORROW</string>
+    <string name="title_activity_filter_tabbed_activity">filter_tabbed_activity</string>
+    <string name="open">Open_navigation_drawer</string>
+    <string name="close">Close_navigation_drawer</string>
+    <string name="title_activity_budget_planning">budget_planning</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="Category">
+        <item>Shopping</item>
+        <item>Car</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Food n Drink</item>
+        <item>Grocery</item>
+        <item>Health</item>
+        <item>Travel</item>
+        <item>Other</item>
+        <item>Lend</item>
+
+
+    </string-array>
+    <string-array name="Category_Income">
+        <item>Salary</item>
+        <item>Allowance</item>
+        <item>Bonus</item>
+        <item>Borrow</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string-array name="Account_Expense">
+        <item>Cash</item>
+        <item>Bank</item>
+        <item>Card</item>
+    </string-array>
+    <string-array name="Account_Income">
+        <item>Cash</item>
+        <item>Bank</item>
+    </string-array>
+    <string-array name="Filters">
+        <item>No Filter</item>
+        <item>Date</item>
+        <item>Category</item>
+        <item>Date and Category</item>
+        <item>Account</item>
+    </string-array>
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="Years">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+
+    <string-array name="Overview">
+        <item>total</item>
+        <item>yearly</item>
+        <item>monthly</item>
+    </string-array>
+
+    <string-array name="num_months">
+        <item>One month</item>
+        <item>Two month</item>
+        <item>Three month</item>
+        <item>Six month</item>
+        <item>Twelve month</item>
+    </string-array>
+    <string-array name="profiles">
+        <item>Primary</item>
+        <item>Home</item>
+        <item>Work</item>
+    </string-array>
+</resources>

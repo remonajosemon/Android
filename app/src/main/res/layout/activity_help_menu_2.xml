@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:context=".help_menu_1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to add Expense? "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="To add an Expense. Click on the Green Add button with plus “+” sign on it. "/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/dashboard" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="And Select the Expense tab from the top bar. The current Date and Time is already selected. You can also change it by clicking on the date and time. "/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/income" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Add in the amount. Select the Account Type and Category. You can also add in an additional note with the expense. You also have an Option of adding Contacts for the particular entry."/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

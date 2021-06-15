@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/draw_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dimwhite"
+        android:layout_above="@+id/bottom_navigation">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            android:id="@+id/toolbar1" />
+        <ImageView
+            android:id="@+id/type_button"
+            android:layout_width="35dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_date"
+            />
+
+
+        <TextView
+            android:id="@+id/yearly_txt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/type_button"
+            android:text="Year"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/monthly_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/yearly_txt"
+            android:text="Month"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/overview"
+            android:layout_width="400dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Spinner
+                android:id="@+id/overview_type_spinner"
+                android:layout_width="124dp"
+                android:layout_height="15dp" />
+
+
+            <Spinner
+                android:id="@+id/overview_year_spinner"
+                android:layout_width="124dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="100dp" />
+
+            <Spinner
+                android:id="@+id/overview_month_spinner"
+                android:layout_width="124dp"
+                android:layout_marginStart="200dp"
+                android:layout_height="15dp" />
+
+
+            <TextView
+                android:id="@+id/avgExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="40dp"
+                android:text="Expense"
+                android:textColor="@color/grey"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/avgIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="40dp"
+                android:text="Income"
+                android:textColor="@color/grey"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Overview"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="70dp"
+                android:text="Total Wealth"
+                android:textColor="@color/grey"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="70dp"
+                android:text="Expense"
+                android:textColor="@color/grey"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="70dp"
+                android:text="Income"
+                android:textColor="@color/grey"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="90dp"
+                android:text="Amount"
+                android:textColor="@color/darkgreen"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainIncomeAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="90dp"
+                android:text="Amount"
+                android:textColor="@color/darkgreen"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMainExpenseAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="90dp"
+                android:text="Amount"
+                android:textColor="@color/darkgreen"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/logo_transparent" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview"
+            android:layout_above="@id/bottom_navigation">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="EXPENSE"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/graphical" >
+                    </TextView>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/graph"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/graphical" >
+                    </com.github.mikephil.charting.charts.PieChart>
+                    <TextView
+                        android:id="@+id/graph_not"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:text="No Transactions Yet"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/graphical" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@id/graph"
+                        android:paddingBottom="20dp">
+                        <TextView
+                            android:id="@+id/categories"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Categories"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:paddingTop="5dp"
+                            android:paddingStart="20dp"/>
+                        <RelativeLayout
+                            android:id="@+id/rl_car"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_car"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Car"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_car_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_ent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_ent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Entertainment"
+                                android:textSize="18dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_ent_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_edu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_edu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Education"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_edu_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_food"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_food"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Food n Drink"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_ent_food"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_grocery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_grocery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Grocery"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_grocery_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_health"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_health"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Health"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_health_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_shopping"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_shopping"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Shopping"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_shopping_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_travel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_travel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Travel"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_travel_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/ex_other"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Other"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/ex_other_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#C61111"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border2"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/border2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="INCOME"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/graphical" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/graph_income"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="430dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_alignParentTop="true"
+                        app:srcCompat="@drawable/graphical" />
+                    <TextView
+                        android:id="@+id/graph_not_income"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="No Transactions Yet"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_alignParentTop="true"
+                        app:srcCompat="@drawable/graphical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:layout_below="@id/graph_income">
+                        <TextView
+                            android:id="@+id/categories_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Categories"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:paddingTop="5dp"
+                            android:paddingStart="20dp"/>
+                        <RelativeLayout
+                            android:id="@+id/rl_salary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/in_salary"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Salary"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/in_salary_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#277725"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_allowance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/in_allowance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Allowance"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/in_allowance_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#277725"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_bonus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/in_bonus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Bonus"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/in_bonus_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#277725"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_borrow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/in_borrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:text="Borrow"
+                                android:textSize="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+                            <TextView
+                                android:id="@+id/in_borrow_food"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingEnd="30dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textColor="#277725"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:backgroundTint="@color/darkgreen"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="30dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconSize="24dp"
+            app:labelVisibilityMode="labeled"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/green"
+            app:menu="@menu/bottom_navigation" />
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:menu="@menu/navigation_drawer"
+        app:headerLayout="@layout/nav_drawer_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

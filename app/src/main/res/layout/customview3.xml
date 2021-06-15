@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/imageView_customlistview">
+
+        <TextView
+            android:id="@+id/category_customlistview"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_customlistview"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_customlistview"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageView_currency"
+            android:text="Account"
+            android:textColorLink="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView_currency"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="0dp"
+            android:layout_below="@id/category_customlistview"
+            app:srcCompat="@color/green" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/plusminus_customlistview"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:text="+-"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView_customlistview"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/plusminus_customlistview"
+        app:srcCompat="@color/lightGreen" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:id="@+id/amount_customlistview"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:text="Amount"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/addbutton_customlistview"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/amount_customlistview"
+            android:background="@drawable/custom_button"
+            android:text="ADD"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/amount_customlistview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/deletebutton_customlistview"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/addbutton_customlistview"
+            android:background="@drawable/delete_image"
+            android:layout_marginEnd="5dp"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addbutton_customlistview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

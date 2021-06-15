@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <TextView
+        android:id="@+id/expenseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text= "Help menu"
+        android:paddingStart="10dp"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/expenseDetails1"/>
+
+    <TextView
+        android:id="@+id/expenseDetails1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/green"
+        android:text="  "
+        android:textAlignment="inherit"
+        android:layout_alignParentTop="true"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/expenseDetails2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="  "
+        android:textAlignment="inherit"
+        android:layout_below="@+id/expenseDetails"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/expenseDetails2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/help_menu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. How to add Income? "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/help_menu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. How to add Expense? "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/help_menu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. How to add an entry that occurs frequently?"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/help_menu4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. How to set/change the currency and exchange rate?"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/help_menu5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Where to find the details of the transactions?"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/help_menu6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. How to edit a transaction?"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/help_menu7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. How to delete a transaction?"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/help_menu8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Budget planning"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/help_menu9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Data Export"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/help_menu10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Reset password"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:id="@+id/currency_lend_customlistview"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/date_lend_customlistview"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/currency_lend_customlistview"/>
+
+    <TextView
+        android:id="@+id/name_lend_customlistview"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/date_lend_customlistview" />
+
+
+    <TextView
+        android:id="@+id/amount_lend_customlistview"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="Amount"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/name_lend_customlistview"
+       />
+
+    <Switch
+        android:id="@+id/switch_lend"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="paid"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/amount_lend_customlistview"
+        android:layout_alignParentRight="true"/>/>
+
+
+</RelativeLayout>

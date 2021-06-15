@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/filteroptions_textview"
+                android:layout_width="110dp"
+                android:layout_height="22dp"
+                android:text="Filter options"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Filter options" />
+
+            <Spinner
+                android:id="@+id/filteroptions_spinner"
+                android:layout_width="197dp"
+                android:layout_height="21dp"
+                android:layout_alignRight="@+id/filteroptions_textview"
+                android:layout_marginLeft="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
+                app:layout_constraintStart_toEndOf="@+id/filteroptions_textview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cl1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart= "2dp">
+
+            <TextView
+                android:id="@+id/category_filter_textview"
+                android:layout_width="110dp"
+                android:layout_height="22dp"
+                android:text="Category"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/account_filter_textview"
+                android:layout_width="110dp"
+                android:layout_height="22dp"
+                android:text="Account"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/category_filter_spinner"
+                android:layout_width="200dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/category_filter_textview"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Spinner
+                android:id="@+id/account_filter_spinner"
+                android:layout_width="200dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/category_filter_textview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/cl3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cl2"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/numberofmonths_textview"
+                android:layout_width="110dp"
+                android:layout_height="22dp"
+                android:text="Months"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/no_of_months_spinner"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:dropDownSelector="@drawable/ic_arrow_drop_down_circle_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/numberofmonths_textview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cl3">
+
+            <TextView
+                android:id="@+id/fromdate_textview"
+                android:layout_width="114dp"
+                android:layout_height="22dp"
+                android:text="From Date"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/monthsfilter_spinner"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                app:layout_constraintStart_toEndOf="@+id/fromdate_textview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/yearfilter_spinner"
+                android:layout_width="125dp"
+                android:layout_height="22dp"
+                app:layout_constraintStart_toEndOf="@+id/monthsfilter_spinner"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/cl10"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cl1"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/numberofmonths_textview1"
+                android:layout_width="110dp"
+                android:layout_height="22dp"
+                android:text="Months"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/no_of_months_spinner1"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:dropDownSelector="@drawable/ic_arrow_drop_down_circle_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/numberofmonths_textview1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl11"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cl10">
+
+            <TextView
+                android:id="@+id/fromdate_textview1"
+                android:layout_width="114dp"
+                android:layout_height="22dp"
+                android:text="From Date"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/monthsfilter_spinner1"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                app:layout_constraintStart_toEndOf="@+id/fromdate_textview1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/yearfilter_spinner1"
+                android:layout_width="125dp"
+                android:layout_height="22dp"
+                app:layout_constraintStart_toEndOf="@+id/monthsfilter_spinner1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/show_button_filter"
+            android:layout_below="@+id/cl4"
+            android:layout_width="122dp"
+            android:layout_height="44dp"
+            android:text="SHOW"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_filter"
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/rl1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/darkgreen"
+        app:elevation="5dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="30dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/green"
+        app:itemIconSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+</RelativeLayout>
