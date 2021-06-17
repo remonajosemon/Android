@@ -7,4 +7,5 @@ Featuress of the app include
 4- Keep monthly thesholds on expenses.
 5- Filter transactions based on date, category
 6- Find the average values.
+7- import and export data
 7- Customer support
